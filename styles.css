@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant&display=swap');
+
+:root {
+    --darkGreen: #064635;
+    --green: #519259;
+    --orange: #f0bb62;
+    --yellow: #f4eea9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: center;
+}
+
+/* html, body {
+    margin: 0;
+    height:100%;
+    width:100%;
+    padding:0;
+}
+
+section {
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-sizing:border-box;
+} */
+
+p {
+    color: var(--green);
+}
+
+.big-heading {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+.green-section {
+    background: var(--darkGreen);
+    color: var(--orange);
+}
+
+.yellow-section {
+    background: var(--yellow);
+}
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Abril Fatface';
+    font-size: 2.5rem;
+    color: var(--orange);
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Cormorant'serif;
+    color: var(--yellow);
+}
+
+.download-button {
+    margin: 5% 3% 5% 0;
+    background: var(--orange);
+    color: var(--darkGreen);
+}
+
+.download-button:hover {
+    background: var(--green);
+    color: var(--yellow);
+}
+
+#title {
+    background: var(--darkGreen);
+    color: var(--orange);
+    text-align: left;
+}
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+}
+
+.title-image {
+    width: 100%;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    position: absolute;
+    right: 10%;
+    margin: 50px;
+}
+
+#features {
+    position: relative;
+}
+
+.feature-title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.5em;
+    color: var(--darkGreen);
+}
+
+.feature-box {
+    padding: 4.5%;
+}
+
+.icon {
+    color: var(--green);
+}
+
+.icon:hover {
+    color: var(--darkGreen);
+}
+
+#testimonials {
+    background: var(--green);
+}
+
+.testimonial-text {
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+.testimonial-image {
+    width: 20%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press {
+    background: var(--darkGreen);
+    padding-bottom: 3%;
+}
+
+.press-heading {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3em;
+    padding: 50px;
+}
+
+.logos {
+    margin: 100px;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+#pricing {
+    padding: 100px;
+}
+
+.section-heading {
+    font-family: 'Abril Fatface', cursive;
+    color: var(--darkGreen);
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+.card {
+    background: var(--green);
+}
+
+.card-header {
+    font-family: 'Abril Fatface', cursive;
+}
+
+.card-header,
+.card-body {
+    color: var(--orange);
+}
+
+.card p {
+    color: var(--yellow);
+}
+
+.price-text {
+    font-size: 3em;
+    line-height: 1.5;
+}
+
+.signup-button {
+    background: var(--orange);
+    color: var(--darkGreen);
+    border: none;
+}
+
+.signup-button:hover {
+    background: var(--darkGreen);
+    color: var(--orange);
+}
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+    }
+}
+
+.tag {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 2s;
+}
+
+.tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.fadeIn {
+    animation: fadein 3s;
+}
